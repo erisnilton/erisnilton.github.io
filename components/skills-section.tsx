@@ -31,6 +31,8 @@ const skillCategories = [
       {name: "RabbitMQ", icon: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/rabbitmq/rabbitmq-original.svg" },
       {name: "WebSockets", icon: "🔌" },
       {name: "keycloak", icon: "🔑" },
+      {name: "python", icon: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/python/python-original.svg" },
+      {name: "FastAPI", icon: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/fastapi/fastapi-original.svg" },
     ],
   },
   {
