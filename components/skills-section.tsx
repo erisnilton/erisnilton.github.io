@@ -1,28 +1,28 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
 import { Card } from "@/components/ui/card"
+import { useEffect, useRef, useState } from "react"
 
 const skillCategories = [
   {
     title: "Frontend",
     skills: [
-      { name: "React", level: 95 },
-      { name: "Vue.js", level: 90 },
-      { name: "TypeScript", level: 95 },
-      { name: "Next.js", level: 90 },
-      { name: "Unocss CSS", level: 95 },
+      { name: "React", url: "https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg"},
+      { name: "Vue.js"},
+      { name: "TypeScript"},
+      { name: "Next.js"},
+      { name: "Unocss CSS"},
     ],
   },
   {
     title: "Backend",
     skills: [
-      { name: "NestJS", level: 95 },
-      { name: "Node.js", level: 95 },
-      { name: "Express", level: 90 },
-      { name: "JWT", level: 90 },
-      { name: "Java", level: 90 },
-      { name: "Spring Boot", level: 85 },
+      { name: "NestJS"},
+      { name: "Node.js"},
+      { name: "Express"},
+      { name: "JWT"},
+      { name: "Java"},
+      { name: "Spring Boot"},
 
       
     ],
@@ -30,26 +30,26 @@ const skillCategories = [
   {
     title: "Database & DevOps",
     skills: [
-      { name: "PostgreSQL", level: 90 },
-      { name: "MongoDB", level: 70 },
-      { name: "ArangoDB", level: 70 },
-      { name: "Redis", level: 80 },
-      { name: "Redis Stream", level: 80 },
-      { name: "Docker", level: 85 },
-      { name: "GCP", level: 75 },
+      { name: "PostgreSQL" },
+      { name: "MongoDB" },
+      { name: "ArangoDB"  },
+      { name: "Redis" },
+      { name: "Redis Stream" },
+      { name: "Docker" },
+      { name: "GCP" },
     ],
   },
   {
     title: "Arquitetura & Práticas",
     skills: [
-      { name: "MVC", level: 95 },
-      { name: "Clean Architecture", level: 90 },
-      { name: "REST APIs", level: 95 },
-      { name: "Microservices", level: 80 },
-      { name: "TDD", level: 80 },
-      { name: "DDD", level: 80 },
+      { name: "MVC" },
+      { name: "Clean Architecture" },
+      { name: "REST APIs" },
+      { name: "Microservices" },
+      { name: "TDD" },
+      { name: "DDD" },
       {
-        name: 'Multi-tenancy', level: 85
+        name: 'Multi-tenancy'
       }
     ],
   },
@@ -93,16 +93,6 @@ export function SkillsSection() {
                   <div key={skillIndex}>
                     <div className="flex justify-between mb-3">
                       <span className="font-medium text-foreground">{skill.name}</span>
-                      <span className="text-muted-foreground text-sm font-medium">{skill.level}%</span>
-                    </div>
-                    <div className="h-2.5 bg-muted rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-primary transition-all duration-1000 ease-out rounded-full"
-                        style={{
-                          width: isVisible ? `${skill.level}%` : "0%",
-                          transitionDelay: `${categoryIndex * 100 + skillIndex * 50}ms`,
-                        }}
-                      />
                     </div>
                   </div>
                 ))}
