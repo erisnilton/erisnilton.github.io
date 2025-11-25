@@ -3,7 +3,7 @@ description: Deploys the website to GitHub Pages when the build is successful.
 on:
   push:
     branches:
-      - v2
+      - main
   workflow_dispatch:
     
 permissions:
