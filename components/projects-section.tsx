@@ -60,7 +60,7 @@ const projects = [
   {
     title: "Transcritor.ai",
     context:
-      "Contexto: Documentos antigos costumam estar desgastados, ilegíveis ou apenas em imagem, dificultando leitura e edição..",
+      "Contexto: Documentos antigos costumam estar desgastados, ilegíveis ou apenas em imagem, dificultando leitura e edição.",
     solution:
       "Atuação: Contribuí no desenvolvimento de uma plataforma que usa IA para converter esses documentos em texto claro e editável.",
     result:
