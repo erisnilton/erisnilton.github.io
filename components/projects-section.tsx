@@ -29,6 +29,7 @@ const projects = [
     image: "/brinca-aula.png",
     // github: "#",
     // demo: "#",
+    is_private: true,
   },
   {
     title: "App Balde Cheio",
@@ -54,6 +55,7 @@ const projects = [
     image: "/app-balde-cheio.png",
     github: "#",
     demo: "#",
+    is_private: true,
   },
   {
     title: "Transcritor.ai",
@@ -78,15 +80,16 @@ const projects = [
     // image: "/transcritor-ai.png",
     github: "#",
     demo: "#",
+    is_private: true,
   },
   {
     title: "Cripto Tracker",
     context:
-      "Contexto: Quis aprofundar meus conhecimentos em consumo de APIs e atualização de dados em tempo real.l.",
+      "Contexto: Quis aprofundar meus conhecimentos em consumo de APIs e atualização de dados em tempo real.",
     solution:
       "Solução: Desenvolvi uma aplicação web que utiliza a API pública da CoinGecko para exibir cotações de criptomoedas de forma dinâmica.",
     result:
-      "Resultado: O projeto serviu como exercício prático para reforçar integração com APIs, tratamento de dados e construção de interfaces reativas.s.",
+      "Resultado: O projeto serviu como exercício prático para reforçar integração com APIs, tratamento de dados e construção de interfaces reativas.",
     description:
       "Cripto Track é um projeto pessoal desenvolvido para acompanhar cotações de criptomoedas em tempo real. A aplicação consome dados atualizados da API pública da CoinGecko.",
     technologies: [
@@ -142,7 +145,7 @@ const projects = [
       "Um simples encurtador de URLs criado com Node.js, utilizando Express, PostgreSQL, Knex e conteinerizado com Docker e Docker Compose.",
     technologies: ["Vue.js", "Node.js", "MongoDB", "Google Maps API"],
     image: "/encurtador-de-links.png",
-    github: "#",
+    github: "https://github.com/erisnilton/encurtador-de-link",
     demo: "#",
   },
 ];
@@ -221,18 +224,28 @@ export function ProjectsSection() {
                   ))}
                 </div>
 
-                <div className="flex gap-3">
-                  <Button variant="outline" size="sm" asChild>
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Github className="mr-2 h-4 w-4" />
-                      Repositório
-                    </a>
+                <div className="flex ">
+                  <Button
+                    variant="secondary"
+                    size="sm"
+                    className="flex-1 bg-transparent"
+                    asChild
+                    disabled={project.is_private}
+                  >
+                    {project.is_private ? (
+                      <span>🔒 Privado</span>
+                    ) : (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github className="mr-1 h-3 w-3" />
+                        GitHub
+                      </a>
+                    )}
                   </Button>
-                  <Button size="sm" asChild>
+                  {/* <Button size="sm" asChild>
                     <a
                       href={project.demo}
                       target="_blank"
@@ -241,7 +254,7 @@ export function ProjectsSection() {
                       <ExternalLink className="mr-2 h-4 w-4" />
                       Ver Demo
                     </a>
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             </Card>
