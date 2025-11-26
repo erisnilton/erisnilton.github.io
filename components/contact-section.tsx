@@ -46,21 +46,21 @@ export function ContactSection() {
               </p>
 
               <div className="space-y-4">
-                <Button variant="outline" className="w-full justify-start bg-transparent" asChild>
+                <Button variant="secondary" className="w-full justify-start bg-transparent" asChild>
                   <a href="mailto:contato@erisnilton">
                     <Mail className="mr-2 h-4 w-4" />
                     contato@erisnilton.dev
                   </a>
                 </Button>
 
-                <Button variant="outline" className="w-full justify-start bg-transparent" asChild>
+                <Button variant="secondary" className="w-full justify-start bg-transparent" asChild>
                   <a href="https://linkedin.com/in/erisnilton" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="mr-2 h-4 w-4" />
                     linkedin.com/in/erisnilton
                   </a>
                 </Button>
 
-                <Button variant="outline" className="w-full justify-start bg-transparent" asChild>
+                <Button variant="secondary" className="w-full justify-start bg-transparent" asChild>
                   <a href="https://github.com/erisnilton" target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-4 w-4" />
                     github.com/erisnilton
@@ -70,17 +70,17 @@ export function ContactSection() {
             </div>
 
             <div className="flex flex-col justify-center items-center bg-muted/30 rounded-lg p-8">
-              <div className="text-center mb-8">
+              {/* <div className="text-center mb-8">
                 <h4 className="text-xl font-semibold mb-3">Baixe meu Currículo</h4>
                 <p className="text-muted-foreground leading-relaxed">
                   Confira minha experiência completa e qualificações
                 </p>
-              </div>
+              </div> */}
 
-              <Button size="lg" className="w-full max-w-xs">
+              {/* <Button size="lg" className="w-full max-w-xs cursor-not-allowed" disabled>
                 <Download className="mr-2 h-5 w-5" />
-                Baixar CV (PDF)
-              </Button>
+                Baixar CV (Em breve)
+              </Button> */}
 
               <div className="mt-8 pt-8 border-t border-border w-full">
                 <p className="text-center text-sm text-muted-foreground">

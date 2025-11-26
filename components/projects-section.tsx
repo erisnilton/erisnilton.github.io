@@ -226,9 +226,8 @@ export function ProjectsSection() {
 
                 <div className="flex ">
                   <Button
-                    variant="secondary"
-                    size="sm"
-                    className="flex-1 bg-transparent"
+                    size="lg"
+                     className="flex-1 text-base"
                     asChild
                     disabled={project.is_private}
                   >

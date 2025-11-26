@@ -177,9 +177,8 @@ export function BackendProjectsSection() {
                 </div>
                 <div className="flex gap-2">
                   <Button
-                    variant="secondary"
-                    size="sm"
-                    className="flex-1 bg-transparent"
+                    size="lg"
+                    className="flex-1 text-base"
                     asChild
                     disabled={project.is_private}
                   >

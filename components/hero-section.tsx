@@ -57,7 +57,7 @@ export function HeroSection() {
               </Button>
               <Button
                 size="lg"
-                variant="outline"
+                variant="secondary"
                 onClick={scrollToContact}
                 className="text-base cursor-pointer"
               >
