@@ -6,7 +6,7 @@ export function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            © {currentYear} Erisnilton Freitas. Todos os direitos reservados.
+            © {currentYear} Erisnilton Freitas.
           </p>
 
           <div className="flex gap-6">
