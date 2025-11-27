@@ -144,7 +144,7 @@ const projects = [
 
     description:
       "Um simples encurtador de URLs criado com Node.js, utilizando Express, PostgreSQL, Knex e conteinerizado com Docker e Docker Compose.",
-    technologies: ["Vue.js", "Node.js", "MongoDB", "Google Maps API"],
+    technologies: ["Node.js", "Express", "PostgreSQL", "Knex.js", "Docker", "Docker Compose"],
     image: "/encurtador-de-links.png",
     github: "https://github.com/erisnilton/encurtador-de-link",
     demo: "#",
