@@ -2,8 +2,10 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Play } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { Dialog } from "./ui/dialog";
+import { DialogTitle } from "@radix-ui/react-dialog";
 
 const projects = [
   {
@@ -101,8 +103,7 @@ const projects = [
       "JavaScript",
       "Vue.JS",
     ],
-    image:
-      "https://github.com/erisnilton/criptotrack/blob/main/public/demo.gif?raw=true",
+    image: "/cripto-tracker.png",
     github: "https://github.com/erisnilton/criptotrack",
     demo: "#",
   },
@@ -213,7 +214,7 @@ export function ProjectsSection() {
                   {project.result}
                 </p>
 
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-12">
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
@@ -224,10 +225,10 @@ export function ProjectsSection() {
                   ))}
                 </div>
 
-                <div className="flex ">
+                <div className="flex items-center gap-2">
                   <Button
                     size="lg"
-                     className="flex-1 text-base"
+                    className="flex-1 text-base"
                     asChild
                     disabled={project.is_private}
                   >
@@ -244,16 +245,14 @@ export function ProjectsSection() {
                       </a>
                     )}
                   </Button>
-                  {/* <Button size="sm" asChild>
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      Ver Demo
-                    </a>
-                  </Button> */}
+                  <Button
+                    variant={"outline"}
+                    size="lg"
+                    className="flex-1 text-base"
+                  >
+                    <Play className="mr-2 h-4 w-4" />
+                    Video Demostrativo
+                  </Button>
                 </div>
               </div>
             </Card>
